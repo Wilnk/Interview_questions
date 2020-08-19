@@ -1,0 +1,83 @@
+.carousel {
+	float: left;
+	width: 540px;
+	height: 270px;
+	background-color: black;
+	margin-left: 10px;
+	margin-top: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.image {
+	/* background-image: url(https://via.placeholder.com/540x270); */
+	width: 540px;
+	height: 270px;
+	position: relative;
+}
+
+.ul {
+	height: 270px;
+	width: 540px;
+	/* border: 1px solid red; */
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.ul-ul {
+	height: 270px;
+	width: 540px;
+	overflow: hidden;
+	/* margin: 0px auto; */
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.ul li {
+	display: none;
+}
+
+.ul li.active {
+	display: block;
+}
+
+.point {
+	width: 90px;
+	height: 15px;
+	/* background-color: purple; */
+	position: absolute;
+	left: calc(49% - 50px);
+	bottom: 10px;
+	display: flex;
+}
+
+.point li {
+	margin: 0 2px;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	list-style-type: none;
+}
+
+.point li.active {
+	background: orangered;
+}
+
+.arrow-left {
+	width: 30px;
+	height: 50px;
+	background: #262B2E;
+	position: absolute;
+	left: 0;
+}
+
+.arrow-right {
+	width: 30px;
+	height: 50px;
+	background: #262B2E;
+	position: absolute;
+	right: 0;
+}

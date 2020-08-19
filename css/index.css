@@ -1,0 +1,326 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 整体页面 */
+.all {
+	/* margin: 0 auto; */
+	/* text-align: center; */
+	width: 100%;
+	height: 100%;
+	background: rgb(245, 248, 249);
+}
+
+/* 头部 */
+.head {
+	margin: 0 auto;
+	width: 1440px;
+	height: 100px;
+	background-color: #ffffff;
+}
+
+.head-all {
+	background-color: #ffffff;
+}
+
+/*  左边LOGO */
+.letfLOGO {
+	background-color: #f92525;
+	color: white;
+	text-align: center;
+	width: 105px;
+	height: 30px;
+	margin-left: 150px;
+	margin-top: 30px;
+	float: left;
+}
+
+/* 右边图标 */
+.righticon {
+	border: none;
+	color: white;
+	width: 50px;
+	margin-right: 0px;
+	margin-top: 33px;
+	float: right;
+}
+
+/* 右边LogOut */
+.rightLogOut {
+	background-color: #f92525;
+	text-align: center;
+	border: none;
+	color: white;
+	width: 105px;
+	height: 30px;
+	margin-right: 150px;
+	margin-top: 30px;
+	float: right;
+}
+
+/* 中间 */
+.intermediate {
+	height: 1276px;
+	margin: 0 auto;
+	width: 1440px;
+	background-color: #f5f8f9;
+}
+
+/* 中间标题导航栏 */
+.Middle_title {
+	background-color: #f5f8f9;
+	width: 100%;
+	height: 170px;
+}
+
+p {
+	font-size: 7px;
+}
+
+/* 中间标题 */
+.intermediate_title {
+	text-align: left;
+	float: left;
+	font-size: 30px;
+	width: 400px;
+	padding-top: 60px;
+	padding-left: 150px;
+}
+
+/* 导航栏 */
+.Navigation_Bar {
+	text-align: left;
+}
+
+.Navigation_Bar>ul {
+	float: left;
+	padding-left: 250px;
+	/* list-style-type: none; */
+	position: relative;
+}
+
+.Navigation_Bar>ul>li {
+	padding-right: 20px;
+	float: left;
+	padding-top: 100px;
+	margin-bottom: 10px;
+	list-style: none;
+	text-align: left;
+	font-size: 13px;
+	color: #262b2e;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* 滑块 */
+.slider {
+	width: 90px;
+	height: 5px;
+	position: absolute;
+	left: 250px;
+	bottom: 0;
+	transition: 0.3s;
+}
+
+.section-2 {
+	background-color: rgb(245, 248, 249);
+	width: 100%;
+	height: 290px;
+}
+
+.section-2-1 {
+	background-color: rgb(255, 255, 255);
+	float: left;
+	display: block;
+	width: 560px;
+	height: 288px;
+	margin-left: 140px;
+	margin-top: 1px;
+	position: relative;
+}
+
+/* 信息 */
+.information {
+	background-color: rgb(255, 255, 255);
+	float: left;
+	display: block;
+	width: 560px;
+	height: 288px;
+	margin-left: 20px;
+	margin-top: 1px;
+}
+
+.information_top {
+	width: 560px;
+	height: 108px;
+}
+
+.Button {
+	float: right;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 12px;
+	border: 2px solid #e9e9e9;
+	width: 95px;
+	height: 34px;
+	margin-top: 30px;
+	margin-right: 50px;
+	padding-top: 14px;
+}
+
+.line {
+	width: 560px;
+	height: 1px;
+	background-color: #202124;
+	opacity: 0.1;
+}
+
+.Text {
+	float: left;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.information_under {
+	width: 560px;
+	height: 177px;
+}
+
+.table {
+	width: 560px;
+	height: 180px;
+	text-align: center;
+	vertical-align: center;
+}
+
+.title {
+	font-weight: bold;
+	font-family: OpenSans-Bold;
+	color: #262b2e;
+}
+
+/* 轮播图旁边的DIV按钮 */
+#square-copy {
+	width: 65px;
+	height: 30px;
+	color: white;
+	font-weight: bold;
+	background-color: #5dd054;
+	border-radius: 2px;
+	border: 0;
+}
+
+/* 曲线图 */
+#line_smooth {
+	padding-top: 20px;
+	width: 1140px;
+	height: 349px;
+}
+
+/* 曲线图 */
+.graph {
+	float: left;
+	background-color: rgb(255, 255, 255);
+	width: 1140px;
+	height: 349px;
+	margin-left: 140px;
+	margin-top: 30px;
+}
+
+/* 曲线图 */
+#line_smooth {
+	padding-top: 20px;
+	width: 1140px;
+	height: 349px;
+}
+
+/* 饼图和树状图 */
+.Two_pictures {
+	background-color: rgb(245, 248, 249);
+	width: 100%;
+	height: 380px;
+	margin-top: 30px;
+}
+
+/* 饼图 */
+#piechart {
+	padding-top: 20px;
+	width: 560px;
+	height: 377px;
+}
+
+/* 饼图 */
+.pie_chart {
+	float: left;
+	background-color: rgb(255, 255, 255);
+	width: 560px;
+	height: 377px;
+	margin-left: 140px;
+	margin-top: 10px;
+}
+
+/* 树状图 */
+.histogram {
+	float: left;
+	background-color: rgb(255, 255, 255);
+	width: 560px;
+	height: 377px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+/* 树状图 */
+#bar_background {
+	padding-top: 20px;
+	width: 560px;
+	height: 377px;
+}
+
+/* 尾部 */
+.tail {
+	width: 1440px;
+	height: 253px;
+	margin: 0 auto;
+	background-color: #202124;
+}
+
+.tail-all {
+	background-color: #202124;
+}
+
+/* 尾部左边LOGO */
+.tailLOGO {
+	background-color: #f92525;
+	color: white;
+	text-align: center;
+	width: 105px;
+	height: 30px;
+	margin-left: 190px;
+	margin-top: 80px;
+	float: left;
+}
+
+/* 尾部中间 */
+.tailin {
+	height: 150px;
+	float: left;
+	line-height: 30px;
+}
+
+.tailin>ul {
+	float: left;
+	display: block;
+	height: 150px;
+	margin-top: 70px;
+	margin-left: 100px;
+	color: white;
+}
+
+.tailin>ul>li {
+	margin-bottom: 10px;
+	list-style: none;
+	text-align: left;
+}

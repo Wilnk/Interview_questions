@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>面试题</title>
+	</head>
+	<body>
+		<!-- 整体页面 -->
+		<div class="all">
+			<!-- 头部 -->
+			<div class="head-all">
+				<div class="head">
+					<!-- 左边LOGO -->
+					<div class="letfLOGO">
+						LOGO
+					</div>
+					<!-- 右边LogOut  -->
+					<div class="rightLogOut">
+						Log Out
+					</div>
+					<!-- 右边图标 -->
+					<div class="righticon">
+						<img src="img/setting.png">
+						<img src="img/notification.png">
+					</div>
+				</div>
+			</div>
+			<!-- 中间 -->
+			<div class="intermediate">
+				<!-- 中间标题和导航栏 -->
+				<div class="Middle_title">
+					<!-- 标题 -->
+					<div class="intermediate_title">
+						Audience Overview
+						<p>Roseville,CA</p>
+					</div>
+					<!-- 导航栏 -->
+					<div class="Navigation_Bar">
+						<ul>
+							<li class="Navigation_Id">DASHBOARD </li>
+							<li class="Navigation_Id">PROJECTS </li>
+							<li class="Navigation_Id">CALENDAR </li>
+							<li class="Navigation_Id">MAILBOX </li>
+							<li class="Navigation_Id">SETTINGS </li>
+							<!-- 滑块 -->
+							<div class="slider">
+							</div>
+						</ul>
+					</div>
+				</div>
+				<!-- 轮播图和信息 -->
+				<div class="section-2">
+					<div class="section-2-1">
+						<!-- 轮播图 -->
+						<div class="carousel">
+							<div class="image">
+								<div class="ul-ul">
+									<ul class="ul">
+										<li class="active"><img src="img/1.png" id="img"></li>
+										<li><img src="img/2.png" id="img"></li>
+										<li><img src="img/3.png" id="img"></li>
+										<li><img src="img/4.png" id="img"></li>
+										<li><img src="img/5.png" id="img"></li>
+									</ul>
+									<div class="arrow-left"> </div>
+									<div class="arrow-right"> </div>
+								</div>
+								<ul class="point">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 信息 -->
+					<div class="information">
+						<div class="information_top">
+							<div class="Text">
+								Support Requests
+							</div>
+							<div class="Button">
+								View All
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="information_under">
+							<table class="table">
+								<tr class="title">
+									<td>TIME</td>
+									<td>USER NAME</td>
+									<td>STATUS</td>
+								</tr>
+								<tr>
+									<td>9:45pm</td>
+									<td>info@design.com</td>
+									<td><button id="square-copy">Solved</button></td>
+								</tr>
+								<tr>
+									<td>9:45pm</td>
+									<td>info@design.com</td>
+									<td><button id="square-copy">Solved</button></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- 曲线图 -->
+				<div class="graph">
+					<div id="line_smooth"></div>
+				</div>
+				<!-- 树状图和饼图 -->
+				<div class="Two_pictures">
+					<!-- 饼图 -->
+					<div class="pie_chart">
+						<div id="piechart">
+						</div>
+					</div>
+					<!-- 树状图 -->
+					<div class="histogram">
+						<div id="bar_background"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 尾部 -->
+			<div class="tail-all">
+				<div class="tail">
+					<!-- 尾部左边LOGO -->
+					<div class="tailLOGO">
+						LOGO
+					</div>
+					<!-- 尾部中间 -->
+					<div class="tailin">
+						<ul>
+							<li>NEWI</li>
+							<li>CHANNELS</li>
+							<li>OVERVIEW</li>
+							<li>TIMELINE</li>
+						</ul>
+						<ul>
+							<li>SPORT</li>
+							<li><u>CULTURE</u></li>
+							<li>NATURE</li>
+							<li>MUSIC</li>
+						</ul>
+						<ul>
+							<li>WEATHER</li>
+							<li>AUTOS</li>
+							<li>LOCAL</li>
+							<li>SHOP</li>
+						</ul>
+						<ul>
+							<li>FUTURE</li>
+							<li>FOOD</li>
+							<li>EARTH</li>
+							<li>TV</li>
+						</ul>
+						<ul>
+							<li>TRAVEL</li>
+							<li>RADIO</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<!-- CSS -->
+	<style type="text/css">
+		/* 主CSS */
+		@import url("css/index.css");
+		/* 轮播图CSS */
+		@import url("css/Carousel.css");
+	</style>
+	<!-- Echarts可视化依赖 -->
+	<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0-alpha.1/echarts.min.js"></script>
+	<!-- jQuery依赖 -->
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- 三个可视化数据JS -->
+	<!-- 饼图 -->
+	<script src="js/Pie_chart.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 树状图 -->
+	<script src="js/bar_background.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 曲线图 -->
+	<script src="js/line_smooth.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 导航栏滑块效果 -->
+	<script src="js/Slider_effect.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 轮播图JS -->
+	<script src="js/Carousel.js" type="text/javascript" charset="utf-8"></script>
+</html>
