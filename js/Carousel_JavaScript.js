@@ -47,7 +47,6 @@ let Bound_event = function() {
 let run = function() {
 	timer = setInterval(function() {
 		if (++index === 5) index = 0
-		console.log(index)
 		ReClass(index)
 		AddIndex(index)
 	}, 1000);
