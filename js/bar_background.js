@@ -26,21 +26,23 @@ option = {
 	}]
 };
 bar.onreadystatechange = function() {
-	let bar_result = bar.responseText;
-	let bar_json = JSON.parse(bar_result);
-	let week = bar_json.data.xAxis;
-	let number = bar_json.data.series;
-	background.setOption({
-		series: [{
-			type: 'bar',
-			data: number,
+	if (bar.readyState == 4 && bar.status == 200 || bar.status == 304) {
+		let bar_result = bar.responseText;
+		let bar_json = JSON.parse(bar_result);
+		let week = bar_json.data.xAxis;
+		let number = bar_json.data.series;
+		background.setOption({
+			series: [{
+				type: 'bar',
+				data: number,
 
-		}],
-		xAxis: {
-			type: 'category',
-			data: week,
-		},
-	});
+			}],
+			xAxis: {
+				type: 'category',
+				data: week,
+			},
+		});
+	}
 }
 bar.open("GET", "https://edu.telking.com/api/?type=week", true)
 bar.send(null);

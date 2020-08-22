@@ -52,27 +52,29 @@ option = {
 		}
 	}]
 };
-line.onreadystatechange = function () {
-	let result = line.responseText;
-	let json = JSON.parse(result);
-	let mapp = [];
-	for (let i = 0; i < json.data.series.length; i++) {
-		let map = {};
-		for (let j = 0; j < json.data.xAxis.length; j++) {
-			if (i == j) {
-				map.value = json.data.series[i];
-				map.name = json.data.xAxis[j];
-				mapp.push(map);
+line.onreadystatechange = function() {
+	if (line.readyState == 4 && line.status == 200 || line.status == 304) {
+		let result = line.responseText;
+		let json = JSON.parse(result);
+		let mapp = [];
+		for (let i = 0; i < json.data.series.length; i++) {
+			let map = {};
+			for (let j = 0; j < json.data.xAxis.length; j++) {
+				if (i == j) {
+					map.value = json.data.series[i];
+					map.name = json.data.xAxis[j];
+					mapp.push(map);
+				}
 			}
 		}
+		let pie = JSON.parse(JSON.stringify(mapp));
+		piechart.setOption({
+			series: [{
+				name: '访问来源',
+				data: pie,
+			}]
+		});
 	}
-	let pie = JSON.parse(JSON.stringify(mapp));
-	piechart.setOption({
-		series: [{
-			name: '访问来源',
-			data: pie,
-		}]
-	});
 }
 line.open("GET", "https://edu.telking.com/api/?type=week", true)
 line.send(null);
