@@ -38,8 +38,6 @@ line_ajax.onreadystatechange = function() {
 		let line_json = JSON.parse(line_result);
 		let quantity = line_json.data.series;
 		let time = line_json.data.xAxis;
-		console.log(quantity)
-		console.log(time)
 		line_smooth.setOption({
 			series: [{
 				type: 'line',
