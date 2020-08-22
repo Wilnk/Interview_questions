@@ -33,11 +33,13 @@ option = {
 	}]
 };
 line_ajax.onreadystatechange = function() {
-	if (line.line_ajax == 4 && line_ajax.status == 200 || line_ajax.status == 304) {
+	if (line_ajax.readyState == 4 && line_ajax.status == 200 || line_ajax.status == 304) {
 		let line_result = line_ajax.responseText;
 		let line_json = JSON.parse(line_result);
 		let quantity = line_json.data.series;
 		let time = line_json.data.xAxis;
+		console.log(quantity)
+		console.log(time)
 		line_smooth.setOption({
 			series: [{
 				type: 'line',
